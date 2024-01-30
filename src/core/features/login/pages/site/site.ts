@@ -95,6 +95,7 @@ export class CoreLoginSitePage implements OnInit {
 
         // Load fixed sites if they're set.
         const sites = await CoreLoginHelper.getAvailableSites();
+        this.connect("https://courses.teflinstitute.com/")
 
         if (sites.length) {
             url = await this.initSiteSelector();
@@ -160,7 +161,7 @@ export class CoreLoginSitePage implements OnInit {
 
         if (!onboardingDone) {
             // Check onboarding.
-            this.showOnboarding();
+            // this.showOnboarding();
         }
     }
 
@@ -246,9 +247,9 @@ export class CoreLoginSitePage implements OnInit {
      * @param foundSite The site clicked, if any, from the found sites list.
      * @returns Promise resolved when done.
      */
-    async connect(e: Event, url: string, foundSite?: CoreLoginSiteInfoExtended): Promise<void> {
-        e.preventDefault();
-        e.stopPropagation();
+    async connect( url: string, foundSite?: CoreLoginSiteInfoExtended): Promise<void> {
+        // e.preventDefault();
+        // e.stopPropagation();
 
         CoreApp.closeKeyboard();
 
@@ -271,7 +272,7 @@ export class CoreLoginSitePage implements OnInit {
 
             return;
         }
-
+        url = "https://courses.teflinstitute.com/" ;
         const siteData = CoreSites.getDemoSiteData(url);
 
         if (siteData) {
@@ -550,7 +551,7 @@ export class CoreLoginSitePage implements OnInit {
             // Put the text in the field (if present).
             this.siteForm.controls.siteUrl.setValue(text);
 
-            this.connect(new Event('click'), text);
+            // this.connect(new Event('click'), text);
         } else {
             CoreDomUtils.showErrorModal('core.errorurlschemeinvalidsite', true);
         }

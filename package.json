@@ -1,10 +1,10 @@
 {
   "name": "moodlemobile",
   "version": "4.3.0",
-  "description": "The official app for Moodle.",
+  "description": "Tefl Institute Moodle app",
   "author": {
-    "name": "Moodle Pty Ltd.",
-    "email": "mobile@moodle.com"
+    "name": "TEFL Institute",
+    "email": "hello@tefl.ie"
   },
   "repository": {
     "type": "git",
@@ -42,7 +42,8 @@
     "postinstall": "patch-package && cd cordova-plugin-moodleapp && npm install",
     "lang:update-langpacks": "./scripts/update_langpacks.sh",
     "lang:detect-langpacks": "./scripts/update_langpacks.sh detect",
-    "lang:create-langindex": "./scripts/create_langindex.sh"
+    "lang:create-langindex": "./scripts/create_langindex.sh",
+    "release": "ionic cordova build android --prod --release"
   },
   "dependencies": {
     "@angular/animations": "~10.0.14",

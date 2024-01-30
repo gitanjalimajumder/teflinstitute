@@ -1,0 +1,39 @@
+/*! Hammer.JS - v2.0.7 - 2016-04-22
+ * http://hammerjs.github.io/
+ *
+ * Copyright (c) 2016 Jorik Tangelder;
+ * Licensed under the MIT license */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license Angular v10.0.14
+ * (c) 2010-2020 Google LLC. https://angular.io/
+ * License: MIT
+ */
+
+//! Copyright (c) JS Foundation and other contributors
+
+//! authors : Tim Wood, Iskren Chernev, Moment.js contributors
+
+//! github.com/moment/moment-timezone
+
+//! license : MIT
+
+//! moment-timezone.js
+
+//! moment.js
+
+//! moment.js locale configuration
+
+//! momentjs.com
+
+//! version : 0.5.43
+
+//! version : 2.29.4
